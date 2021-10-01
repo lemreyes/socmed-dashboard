@@ -1,0 +1,20 @@
+.today {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.up {
+  color: hsl(163, 72%, 41%);
+}
+
+.down {
+  color: hsl(356, 69%, 56%);
+}
+
+.statusIcon {
+    width: 8px;
+    height: 8px;
+}

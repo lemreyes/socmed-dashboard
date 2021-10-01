@@ -1,0 +1,138 @@
+.pseudoBody {
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-background-color);
+  padding: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.appContainer {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.topBg {
+  width: 100%;
+  height: 10rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-color: var(--top-background-color); 
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary-text-color);
+  margin-bottom: 0.2em;
+}
+
+.overviewToday {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--primary-text-color);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.borderTop {
+  border-top: 1px solid;
+  border-color: var(--secondary-text-color);
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.bigCardContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 10px;
+}
+
+.smallCardContainer {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-gap: 10px;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.totalCount {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+}
+
+@media only screen and (min-width: 400px) {
+  .pseudoBody {
+    height: 100%;
+  }
+
+  .borderTop {
+    border-top: 0;
+    position: relative;
+  }
+
+  .appContainer {
+    width: 90%;
+    height: 100%;
+  }
+
+  .bigCardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .smallCardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .bigCardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+  }
+
+  .smallCardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .bigCardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 10px;
+  }
+
+  .smallCardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+  }
+}

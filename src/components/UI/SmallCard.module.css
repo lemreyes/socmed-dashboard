@@ -1,0 +1,36 @@
+.smallCard {
+  background-color: var(--card-background-color);
+  color: var(--secondary-text-color);
+  border-radius: 5px;
+
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  justify-content: space-between;
+  align-content: space-between;
+
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.smallCard:hover {
+    background-color: var(--card-hover-color);
+  }
+
+.string {
+    text-transform: capitalize;
+}
+
+.icon {
+    align-self: end;
+    justify-self: end;
+}
+
+.count {
+    font-size: 2rem;
+    color: var(--primary-text-color);
+    justify-self: start;
+    align-self: end;
+}
