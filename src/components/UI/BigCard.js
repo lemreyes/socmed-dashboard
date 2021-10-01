@@ -8,7 +8,7 @@ import classes from "./BigCard.module.css";
 import TodayStatus from "./TodayStatus";
 
 const BigCard = (props) => {
-  let theme = useContext(ThemeContext);
+  const theme = useContext(ThemeContext);
   console.log("BigCard theme: " + theme);
   console.log("BigCard props.platformName: " + props.platformName);
 
