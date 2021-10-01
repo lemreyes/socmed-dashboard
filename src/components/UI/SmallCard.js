@@ -7,7 +7,7 @@ import classes from "./SmallCard.module.css";
 import TodayStatus from "./TodayStatus";
 
 const SmallCard = (props) => {
-  let theme = useContext(ThemeContext);
+  const theme = useContext(ThemeContext);
 
   // when exceed 10000, format as 2-digit with k suffix
   const formattedCount =
